@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css?v=1614848760">
+    <link rel="stylesheet" href="css/product.css?v=1614848760">
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fab fa-google"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-12">
+                        <div class="top-right">
+                            <i class="fas fa-user"></i>
+                            <a href="" class="login">user</a>
+                            <div class="user-list">
+                                <div class="user-item"><a href="index.php?layout=order"><i class="fas fa-ship"></i><span>order</span></a></div>
+                                <div class="user-item"><a href="index.php?layout=cart"><i class="fas fa-shopping-cart"></i><span>cart</span></a></div>
+                                <div class="user-item"><a href="index.php?layout=update&id=5"><i class="fas fa-cog"></i><span>setting</span></a></div>
+                                <div class="user-item"><a href="layout/customer/logout.php"><i class="fas fa-sign-out-alt"></i><span>logout</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-12">
+                        <div class="logo">
+                            <h1><a href="index.php">PKlaptop</a></h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12">
+                        <div class="search">
+                            <form action="index.php?layout=search" method="post">
+                                <input type="text" name="search" placeholder="search">
+                                <input type="submit" name="submit" value="Search">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-12">
+                        <div class="cart">
+                            <a href="index.php?layout=cart"><i class="fas fa-shopping-cart"></i></a>
+                            <span>12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <div class="container">
+                <ul class="menu">
+                    <li>
+                        <a href="#">Danh mục sản phẩm</a>
+                        <ul id="menu2" class="menu2">
+                            <li>
+                                <a href="index.php?layout=product&cate_id=1">pin laptop</a>
+                                <ul id="menu3" class="menu3">
+                                    <li><a href="index.php?layout=product&cate_id=1&brand_id=14">Dell</a></li>
+                                    <li><a href="index.php?layout=product&cate_id=1&brand_id=15">Acer</a></li>
+                                    <li><a href="index.php?layout=product&cate_id=1&brand_id=16">Hp</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index.php?layout=product&cate_id=2">sac laptop</a>
+                                <ul id="menu3" class="menu3">
+                                    <li><a href="index.php?layout=product&cate_id=2&brand_id=17">Dell</a></li>
+                                    <li><a href="index.php?layout=product&cate_id=2&brand_id=18">Acer</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">giới thiệu</a></li>
+                    <li><a href="#">liên hệ</a></li>
+                    <li>
+                        <a href="#">nhãn hiệu</a>
+                        <ul class="menu2">
+                            <li><a href="index.php?layout=product&brand_id=14">Dell</a></li>
+                            <li><a href="index.php?layout=product&brand_id=15">Acer</a></li>
+                            <li><a href="index.php?layout=product&brand_id=16">Hp</a></li>
+                            <li><a href="index.php?layout=product&brand_id=17">Dell</a></li>
+                            <li><a href="index.php?layout=product&brand_id=18">Acer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="slide">
+        <div class="container">
+            <div class="owl-carousel owl-theme slide">
+                <div class="item"><img src="images/slider/8945pin-dell-inspiron-3421.jpg" alt=""></div>
+                <div class="item"><img src="images/slider/4075pin-dell-inspiron-3421.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <div id="main">
+        <div class="container">
+            <div class="bread-crumb">
+                <a href="index.php">Home</a>
+                <i class="fas fa-angle-right"></i>
+                <span>Order</span>
+            </div>
+            <div class="product-main">
+                <div class="row">
+                    <div class="col-md-9 col-sm-8 col-12">
+                        <div class="page-order">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>stt</th>
+                                        <th>phone</th>
+                                        <th>address</th>
+                                        <th>total money</th>
+                                        <th>date</th>
+                                        <th>status</th>
+                                        <th>view</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>333883838</td>
+                                        <td>ha noi</td>
+                                        <td>800.000</td>
+                                        <td>2021-02-23 11:10:03</td>
+                                        <td>
+                                            Đang xử lí... </td>
+                                        <td><a href="index.php?layout=order_detail&order_id=51">detail</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>333883838</td>
+                                        <td>ha noi</td>
+                                        <td>800.000</td>
+                                        <td>2021-02-23 11:09:40</td>
+                                        <td>
+                                            Đang xử lí... </td>
+                                        <td><a href="index.php?layout=order_detail&order_id=50">detail</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12">
+                        <div class="sidebar">
+                            <h4>danh mục sản phẩm</h4>
+                            <div class="cate ">
+                                <h5><a href="index.php?layout=product&cate_id=1"><i class="fas fa-angle-right"></i>pin laptop</a><span>20</span></h5>
+                                <ul class="cate-list">
+                                    <li><i class="fas fa-angle-right"></i><a href="index.php?layout=product&cate_id=1&brand_id=15">Acer</a><span>0</span></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="index.php?layout=product&cate_id=1&brand_id=14">Dell</a><span>20</span></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="index.php?layout=product&cate_id=1&brand_id=16">Hp</a><span>0</span></li>
+                                </ul>
+                            </div>
+                            <div class="cate active">
+                                <h5><a href="index.php?layout=product&cate_id=2"><i class="fas fa-angle-right"></i>sac laptop</a><span>4</span></h5>
+                                <ul class="cate-list">
+                                    <li><i class="fas fa-angle-right"></i><a href="index.php?layout=product&cate_id=2&brand_id=18">Acer</a><span>4</span></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="index.php?layout=product&cate_id=2&brand_id=17">Dell</a><span>0</span></li>
+                                </ul>
+                            </div>
+                            <div class="cate">
+                                <h5><a href=""><i class="fas fa-angle-right"></i>PIN LAPTOP</a><span>123</span></h5>
+                                <ul class="cate-list">
+                                    <li><i class="fas fa-angle-right"></i><a href="">Pin Laptop Aser</a><span>123</span></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="">Pin Laptop Aser</a><span>123</span></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="">Pin Laptop Aser</a><span>123</span></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="">Pin Laptop Aser</a><span>123</span></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="">Pin Laptop Aser</a><span>123</span></li>
+                                </ul>
+                            </div>
+                            <h4>Sản phẩm bán chạy</h4>
+                            <ul class="product-hot-list">
+                                <li>
+                                    <a href="index.php?layout=product_detail&product_id=36"><img src="images/product/715pin-dell-inspiron-3421.jpg" alt=""></a>
+                                    <div class="hot-item-text">
+                                        <a href="index.php?layout=product_detail&product_id=36">pin dell inspiron 3442 3421</a>
+                                        <p>400000</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="index.php?layout=product_detail&product_id=55"><img src="images/product/4355pin-dell-inspiron-3421.jpg" alt=""></a>
+                                    <div class="hot-item-text">
+                                        <a href="index.php?layout=product_detail&product_id=55">pin dell inspiron 3442 3421</a>
+                                        <p>400000</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="index.php?layout=product_detail&product_id=57"><img src="images/product/2314pin-dell-inspiron-3421.jpg" alt=""></a>
+                                    <div class="hot-item-text">
+                                        <a href="index.php?layout=product_detail&product_id=57">pin dell inspiron 3442 3421</a>
+                                        <p>400000</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="index.php?layout=product_detail&product_id=34"><img src="images/product/8076sac-acer-aspire-6.png" alt=""></a>
+                                    <div class="hot-item-text">
+                                        <a href="index.php?layout=product_detail&product_id=34">pin dell inspiron 3442 3421</a>
+                                        <p>400000</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+
+
+        });
+
+        <
+        /div>
+
+
+        <
+        div class = "footer" >
+            <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="logo f-logo">
+                    <h1><a href="">PKlaptop</a></h1>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="f-contact">
+                    <h6>tong dai ho tro</h6>
+                    <div class="f-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>09123456789</span>
+                    </div>
+                    <div class="f-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>09123456789</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="f-address">
+                    <h6>Address</h6>
+                    <div class="f-address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>251, Đội Cấn - Ba Đình - Hà Nội</span>
+                    </div>
+                    <div class="f-address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>251, Đội Cấn - Ba Đình - Hà Nội</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <
+            /div>
+
+
+
+
+
+
+
+
+
+            <
+            script type = "text/javascript" >
+
+
+            $(document).ready(function() {
+
+                $('.slide').owlCarousel({
+                    loop: true,
+                    dots: true,
+                    margin: 30,
+                    nav: true,
+                    navText: [
+                        '<span class="prev"><i class="fas fa-chevron-left"></i></span>', '<span class="next"><i class="fas fa-chevron-right"></i></span>'
+                    ],
+                    navClass: ['owl-prev', 'owl-next'],
+                    autoplay: true,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
+                        }
+                    }
+                });
+
+
+                $('.category').owlCarousel({
+                    loop: true,
+                    dots: false,
+                    margin: 30,
+                    nav: false,
+                    // navText: [
+                    // '<span class="prev">prev</span>','<span class="prev">prev</span>'
+                    // ],
+                    // navClass: ['owl-prev', 'owl-next'],
+                    autoplay: true,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        576: {
+                            items: 2
+                        },
+                        768: {
+                            items: 4
+                        }
+                    }
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+        </script>
+</body>
+
+</html>

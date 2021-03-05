@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css?v=1614073644">
+    <link rel="stylesheet" href="css/product.css?v=1614073644">
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fab fa-google"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-12">
+                        <div class="top-right">
+                            <i class="fas fa-user"></i>
+                            <a href="index.php?layout=login" class="login">dang nhap</a>
+                            <span>|</span>
+                            <a href="index.php?layout=register" class="logout">dang kí</a>
+                        </div>
+                        <!-- <div class="top-right">
+                            <i class="fas fa-user"></i>
+                            <a href="" class="login">user</a>
+                            <div class="user-list">
+                                <div class="user-item"><a href="index.php?layout=order"><i class="fas fa-ship"></i><span>order</span></a></div>
+                                <div class="user-item"><a href="index.php?layout=cart"><i class="fas fa-shopping-cart"></i><span>cart</span></a></div>
+                                <div class="user-item"><a href="index.php?layout=update&id=5"><i class="fas fa-cog"></i><span>setting</span></a></div>
+                                <div class="user-item"><a href="layout/customer/logout.php"><i class="fas fa-sign-out-alt"></i><span>logout</span></a></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-12">
+                        <div class="logo">
+                            <h1><a href="index.php">PKlaptop</a></h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12">
+                        <div class="search">
+                            <form action="index.php?layout=search" method="post">
+                                <input type="text" name="search" placeholder="search">
+                                <input type="submit" name="submit" value="Search">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-12">
+                        <div class="cart">
+                            <a href="index.php?layout=cart"><i class="fas fa-shopping-cart"></i></a>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <div class="container">
+                <ul class="menu">
+                    <li>
+                        <a href="#">Danh mục sản phẩm</a>
+                        <ul id="menu2" class="menu2">
+                            <li>
+                                <a href="index.php?layout=product&cate_id=1">pin laptop</a>
+                                <ul id="menu3" class="menu3">
+                                    <li><a href="index.php?layout=product&cate_id=1&brand_id=14">Dell</a></li>
+                                    <li><a href="index.php?layout=product&cate_id=1&brand_id=15">Acer</a></li>
+                                    <li><a href="index.php?layout=product&cate_id=1&brand_id=16">Hp</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index.php?layout=product&cate_id=2">sac laptop</a>
+                                <ul id="menu3" class="menu3">
+                                    <li><a href="index.php?layout=product&cate_id=2&brand_id=17">Dell</a></li>
+                                    <li><a href="index.php?layout=product&cate_id=2&brand_id=18">Acer</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">giới thiệu</a></li>
+                    <li><a href="#">liên hệ</a></li>
+                    <li>
+                        <a href="#">nhãn hiệu</a>
+                        <ul class="menu2">
+                            <li><a href="index.php?layout=product&brand_id=14">Dell</a></li>
+                            <li><a href="index.php?layout=product&brand_id=15">Acer</a></li>
+                            <li><a href="index.php?layout=product&brand_id=16">Hp</a></li>
+                            <li><a href="index.php?layout=product&brand_id=17">Dell</a></li>
+                            <li><a href="index.php?layout=product&brand_id=18">Acer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="slide">
+        <div class="container">
+            <div class="owl-carousel owl-theme slide">
+                <div class="item"><img src="images/slider/8945pin-dell-inspiron-3421.jpg" alt=""></div>
+                <div class="item"><img src="images/slider/4075pin-dell-inspiron-3421.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <div id="main">
+        <section class="product">
+            <div class="container">
+                <div class="product-title">
+                    <h3><a href="index.php?layout=product&cate_id=1">pin laptop</a></h3>
+                    <span></span>
+                </div>
+                <div class="category owl-carousel owl-theme">
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=34"><img src="images/product/8076sac-acer-aspire-6.png" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=34">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=34" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=36"><img src="images/product/715pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=36">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=36" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=37"><img src="images/product/4355pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=37">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=37" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=38"><img src="images/product/7838pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=38">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=38" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=39"><img src="images/product/2314pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=39">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=39" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=40"><img src="images/product/8076sac-acer-aspire-6.png" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=40">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=40" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=42"><img src="images/product/715pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=42">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=42" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=43"><img src="images/product/4355pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=43">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=43" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=44"><img src="images/product/7838pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=44">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=44" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=45"><img src="images/product/2314pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=45">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=45" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=48"><img src="images/product/8076sac-acer-aspire-6.png" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=48">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=48" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=49"><img src="images/product/715pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=49">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=49" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=50"><img src="images/product/4355pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=50">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=50" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=51"><img src="images/product/7838pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=51">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=51" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=52"><img src="images/product/2314pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=52">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=52" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=53"><img src="images/product/8076sac-acer-aspire-6.png" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=53">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=53" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=54"><img src="images/product/715pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=54">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=54" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=55"><img src="images/product/4355pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=55">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=55" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=56"><img src="images/product/7838pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=56">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=56" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=57"><img src="images/product/2314pin-dell-inspiron-3421.jpg" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">400.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=57">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=57" class="product-item-detail">chi tiet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product-title">
+                    <h3><a href="index.php?layout=product&cate_id=2">sac laptop</a></h3>
+                    <span></span>
+                </div>
+                <div class="category owl-carousel owl-theme">
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=35"><img src="images/product/1337sac-acer-aspire-6.png" alt=""></a>
+                        <p class="price-old"></p>
+                        <p class="price">180.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=35">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=35" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=41"><img src="images/product/1337sac-acer-aspire-6.png" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">180.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=41">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=41" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=46"><img src="images/product/1337sac-acer-aspire-6.png" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">180.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=46">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=46" class="product-item-detail">chi tiet</a>
+                    </div>
+                    <div class="product-item item">
+                        <a href="index.php?layout=product_detail&product_id=47"><img src="images/product/1337sac-acer-aspire-6.png" alt=""></a>
+                        <p class="price-old">440.000<sup>d</sup></p>
+                        <p class="price">180.000<sup>d</sup></p>
+                        <h5><a href="index.php?layout=product_detail&product_id=47">sac aus a421 dskd sksl skdk slkd sdd</a></h5>
+                        <a href="index.php?layout=product_detail&product_id=47" class="product-item-detail">chi tiet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="logo f-logo">
+                        <h1><a href="">PKlaptop</a></h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="f-contact">
+                        <h6>tong dai ho tro</h6>
+                        <div class="f-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>09123456789</span>
+                        </div>
+                        <div class="f-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>09123456789</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="f-address">
+                        <h6>Address</h6>
+                        <div class="f-address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>251, Đội Cấn - Ba Đình - Hà Nội</span>
+                        </div>
+                        <div class="f-address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>251, Đội Cấn - Ba Đình - Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        $('.slide').owlCarousel({
+            loop: true,
+            dots: true,
+            margin: 30,
+            nav: true,
+            navText: [
+                '<span class="prev"><i class="fas fa-chevron-left"></i></span>', '<span class="next"><i class="fas fa-chevron-right"></i></span>'
+            ],
+            navClass: ['owl-prev', 'owl-next'],
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+
+        $('.category').owlCarousel({
+            loop: true,
+            dots: false,
+            margin: 30,
+            nav: false,
+            // navText: [
+            // '<span class="prev">prev</span>','<span class="prev">prev</span>'
+            // ],
+            // navClass: ['owl-prev', 'owl-next'],
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 4
+                }
+            }
+        });
+
+    });
+
+    </script>
+</body>
+
+</html>

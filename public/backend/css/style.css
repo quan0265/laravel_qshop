@@ -1,0 +1,45 @@
+.page-content form{
+	padding: 20px;
+}
+
+.page-content form .form-group label{
+	text-transform: capitalize;
+}
+
+.page-content form img{
+	cursor: pointer;
+	display: block;
+}
+
+.page-content .form-control>label{
+	text-transform: capitalize;
+}
+
+.card-header1{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-header1 h6{
+	line-height: 38px;
+}
+
+.card-header h6{
+	text-transform: capitalize;
+}
+
+.modal .modal-dialog{
+	max-width: 600px;
+}
+
+#dataTable tr th{
+	text-transform: capitalize;
+}
+
+form label input[type="checkbox"], form label input[type="radio"]{
+	margin-right: 5px;
+}
+
+.form-status{
+	
+}
