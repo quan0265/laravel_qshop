@@ -66,7 +66,8 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-12">
                         <div class="search">
-                            <form action="index.php?layout=search" method="post">
+                            <form action="{{ route('product.search')}}" method="get">
+                                @csrf
                                 <input type="text" name="search" placeholder="search">
                                 <input type="submit" name="submit" value="Search">
                             </form>

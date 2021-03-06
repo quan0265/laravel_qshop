@@ -51,6 +51,13 @@ class FrontendController extends Controller
     	return view('frontend.pages.product_brand', compact('products', 'brand'));
     }
 
+    public function getSearch(Request $request){
+        
+        $products= Product::where('name', 'like', '%'.$request->search.'%')->paginate(6);
+
+        return view('frontend.pages.search', compact('products'));
+    }
+
     
 
     
