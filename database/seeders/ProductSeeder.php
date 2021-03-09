@@ -87,7 +87,7 @@ class ProductSeeder extends Seeder
 	            'status' => 1,
             ],
             [
-                'brand_id' => 1,
+                'brand_id' => 6,
             	'name' => 'Samsung Galaxy A11',
 	            'slug' => 'samsung-galaxy-a11',
             	'image' => '07-03-59-05-03-2021.jpg',
@@ -97,7 +97,7 @@ class ProductSeeder extends Seeder
 	            'status' => 1,
             ],
             [
-                'brand_id' => 1,
+                'brand_id' => 6,
             	'name' => 'Samsung Galaxy A02s',
 	            'slug' => 'samsung-galaxy-a02s',
             	'image' => '07-03-38-05-03-2021.jpg',
@@ -107,7 +107,7 @@ class ProductSeeder extends Seeder
 	            'status' => 1,
             ],
             [
-                'brand_id' => 1,
+                'brand_id' => 6,
             	'name' => 'Samsung Galaxy A12',
 	            'slug' => 'samsung-galaxy-a12',
             	'image' => '07-03-43-05-03-2021.jpg',
