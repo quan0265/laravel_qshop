@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Models\Category;
+use DB;
 
 class CategoryController extends Controller
 {
@@ -22,16 +23,16 @@ class CategoryController extends Controller
 
     }
 
-    public function editStatus($id){
-        $category= Category::find($id);
-        if($category->status==1){
-            $category->status=0;
-            $category->save();
+    public function editStatus($name, $id){
+        // $table= DB::table($name)->find($id);
+        $table= DB::table($name)->where('id', $id)->first();
+        // dd($table);
+        if($table->status==1){
+            DB::table($name)->where('id', $id)->update(['status'=> 0]);
             return redirect()->back()->with('thongbao', 'status is inactive');
         }
         else{
-            $category->status=1;
-            $category->save();
+            DB::table($name)->where('id', $id)->update(['status'=> 1]);
             return redirect()->back()->with('thongbao', 'status is active');
         }
     }

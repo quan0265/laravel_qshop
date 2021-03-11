@@ -29,9 +29,9 @@ Slider
                         <td>{{ $slider->name }}</td>
                         <td><img src="{{ asset('public/uploads/slider/'.$slider->image) }}" width="80" alt=""></td>
                         @if($slider->status==1)
-                        <td><a class="text-primary font-weight-bold" href="{{ route('slider.status', $slider->id) }}">active</a></td>
+                        <td><a class="text-primary font-weight-bold" href="{{ route('edit.status', ['sliders', $slider->id]) }}">active</a></td>
                         @else
-                        <td><a class="text-danger font-weight-bold" href="{{ route('slider.status', $slider->id) }}">inactive</a></td>
+                        <td><a class="text-danger font-weight-bold" href="{{ route('edit.status', ['sliders', $slider->id]) }}">inactive</a></td>
                         @endif
                         <td>
                             <a href="{{ route('slider.edit', $slider->id )}}" class="btn btn-primary edit" ><i class="fas fa-edit"></i></a>

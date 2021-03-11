@@ -31,21 +31,17 @@ Route::post('admin/login', [UserController::class, 'postLogin'])->name('post.adm
 Route::get('admin/logout', [UserController::class, 'logout'])->name('admin.logout');
 
 Route::prefix('admin/')->middleware('check.admin.login')->group(function(){
+
+	Route::get('{name}/status/{id}', [CategoryController::class, 'editStatus'])->name('edit.status');
+
 	Route::resource('category', CategoryController::class);
-	Route::get('category/status/{id}', [CategoryController::class, 'editStatus'])->name('category.status');
-	
 	Route::resource('brand', BrandController::class);
-	Route::get('brand/status/{id}', [BrandController::class, 'editStatus'])->name('brand.status');
-
 	Route::resource('slider', SliderController::class);
-	Route::get('slider/status/{id}', [SliderController::class, 'editStatus'])->name('slider.status');
-
 	Route::resource('product', ProductController::class);
-	Route::get('product/status/{id}', [ProductController::class, 'editStatus'])->name('product.status');
 	Route::post('product/ajax', [ProductController::class, 'ajaxCategory'])->name('product.ajax');
 
 	Route::get('order', [OrderController::class, 'index'])->name('order.index');
-	Route::get('order/status/{id}', [OrderController::class, 'editStatus'])->name('order.status');
+	Route::get('order-status/{id}', [OrderController::class, 'editStatus'])->name('order.status');
 	Route::delete('order/{id}', [OrderController::class, 'destroy'])->name('order.destroy');
 	Route::get('order-detail/{id}', [OrderController::class, 'getOrderDetail']);
 
@@ -86,21 +82,6 @@ Route::middleware('check.client.login')->group(function(){
 		Route::get('complete', [CartController::class, 'complete']);
 	});
 });
-
-
-// Route::get('detail/{slug}.html', [FrontendController::class, 'getDetail']);
-// Route::post('detail/{slug}.html', [FrontendController::class, 'postComment'])->name('post.comment');
-// Route::get('category/{id}/{slug}.html', [FrontendController::class, 'getCategory']);
-// Route::get('search', [FrontendController::class, 'getSearch']);
-
-// Route::prefix('cart/')->group(function(){
-// 	Route::get('add/{id}', [CartController::class, 'getAddCart']);
-// 	Route::get('show', [CartController::class, 'getShowCart']);
-// 	Route::get('update', [CartController::class, 'getUpdateCart']);
-// 	Route::get('delete/{rowId}', [CartController::class, 'getDeleteCart']);
-// 	Route::post('show', [CartController::class, 'postComplete']);
-// 	Route::get('complete', [CartController::class, 'getComplete']);
-// });
 
 
 

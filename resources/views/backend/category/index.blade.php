@@ -31,9 +31,9 @@ Category
                         <td>{{ $category->name }}</td>
                         <td>{{ $category->slug }}</td>
                         @if($category->status==1)
-                        <td><a class="text-primary font-weight-bold" href="{{ route('category.status', $category->id) }}">active</a></td>
+                        <td><a class="text-primary font-weight-bold" href="{{ route('edit.status', ['categories', $category->id]) }}">active</a></td>
                         @else
-                        <td><a class="text-danger font-weight-bold" href="{{ route('category.status', $category->id) }}">inactive</a></td>
+                        <td><a class="text-danger font-weight-bold" href="{{ route('edit.status', ['categories', $category->id]) }}">inactive</a></td>
                         @endif
                         <td>
                             <a href="{{ route('category.edit', $category->id )}}" class="btn btn-primary edit" ><i class="fas fa-edit"></i></a>

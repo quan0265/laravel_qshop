@@ -42,9 +42,9 @@ Order
                         </td>
                         <td class="text-center">
                             @if($order->status==1)
-                            <a href="{{ asset('admin/order/status/'.$order->id)}}" class="btn btn-primary">shipping</a>
+                            <a href="{{ route('order.status', $order->id) }}" class="btn btn-primary">shipping</a>
                             @elseif($order->status==2)
-                            <a href="{{ asset('admin/order/status/'.$order->id)}}" class="btn btn-success">confirm</a>
+                            <a href="{{ route('order.status', $order->id) }}" class="btn btn-success">confirm</a>
                             @else
                             <button class="btn btn-danger delete btnDelete" data-id="{{ $order->id }}" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></button>
                             @endif

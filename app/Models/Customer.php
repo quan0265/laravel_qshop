@@ -59,7 +59,7 @@ class Customer extends Authenticatable
     }
 
     public function cartCount(){
-        return $this->hasMany('App\Models\Cart', 'customer_id', 'id')->where('order_id', null)->max('quanlity');
+        return $this->hasMany('App\Models\Cart', 'customer_id', 'id')->where('order_id', null)->sum('quanlity');
     }
 
 

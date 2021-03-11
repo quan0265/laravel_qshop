@@ -23,20 +23,6 @@ class BrandController extends Controller
         return view('backend.brand.index', compact('brand', 'categories'));
     }
 
-     public function editStatus($id){
-        $brand= Brand::find($id);
-        if($brand->status==1){
-            $brand->status=0;
-            $brand->save();
-            return redirect()->back()->with('thongbao', 'status is inactive');
-        }
-        else{
-            $brand->status=1;
-            $brand->save();
-            return redirect()->back()->with('thongbao', 'status is active');
-        }
-    }
-
     /**
      * Show the form for creating a new resource.
      *

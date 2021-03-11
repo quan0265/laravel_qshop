@@ -37,9 +37,9 @@ Product
                         <td>{{ $product->price }}</td>
                         <td>{{ $product->price_old }}</td>
                         @if($product->status==1)
-                        <td><a class="text-primary font-weight-bold" href="{{ route('product.status', $product->id) }}">active</a></td>
+                        <td><a class="text-primary font-weight-bold" href="{{ route('edit.status', ['products', $product->id]) }}">active</a></td>
                         @else
-                        <td><a class="text-danger font-weight-bold" href="{{ route('product.status', $product->id) }}">inactive</a></td>
+                        <td><a class="text-danger font-weight-bold" href="{{ route('edit.status', ['products', $product->id]) }}">inactive</a></td>
                         @endif
                         <td>
                             <a href="{{ route('product.edit', $product->id )}}" class="btn btn-primary edit" ><i class="fas fa-edit"></i></a>

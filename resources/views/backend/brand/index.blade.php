@@ -31,9 +31,9 @@ Brand
                         <td>{{ $brand->name }}</td>
                         <td>{{ $brand->slug }}</td>
                         @if($brand->status==1)
-                        <td><a class="text-primary font-weight-bold" href="{{ route('brand.status', $brand->id) }}">active</a></td>
+                        <td><a class="text-primary font-weight-bold" href="{{ route('edit.status', ['brands', $brand->id]) }}">active</a></td>
                         @else
-                        <td><a class="text-danger font-weight-bold" href="{{ route('brand.status', $brand->id) }}">inactive</a></td>
+                        <td><a class="text-danger font-weight-bold" href="{{ route('edit.status', ['brands', $brand->id]) }}">inactive</a></td>
                         @endif
                         <td>
                             <a href="{{ route('brand.edit', $brand->id )}}" class="btn btn-primary edit" ><i class="fas fa-edit"></i></a>

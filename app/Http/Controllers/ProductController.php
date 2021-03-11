@@ -22,20 +22,6 @@ class ProductController extends Controller
         return view('backend.product.index', compact('products'));
     }
 
-    public function editStatus($id){
-        $product= Product::find($id);
-        if($product->status==1){
-            $product->status=0;
-            $product->save();
-            return redirect()->back()->with('thongbao', 'status is inactive');
-        }
-        else{
-            $product->status=1;
-            $product->save();
-            return redirect()->back()->with('thongbao', 'status is active');
-        }
-    }
-
     public function ajaxCategory(Request $request){
         $brands= Brand::where('category_id', $request->category_id)->get();
 

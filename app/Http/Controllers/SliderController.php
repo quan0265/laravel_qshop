@@ -22,21 +22,7 @@ class SliderController extends Controller
         return view('backend.slider.index', compact('sliders'));
 
     }
-
-    public function editStatus($id){
-        $slider= Slider::find($id);
-        if($slider->status==1){
-            $slider->status=0;
-            $slider->save();
-            return redirect()->back()->with('thongbao', 'status is inactive');
-        }
-        else{
-            $slider->status=1;
-            $slider->save();
-            return redirect()->back()->with('thongbao', 'status is active');
-        }
-    }
-
+    
     /**
      * Show the form for creating a new resource.
      *
